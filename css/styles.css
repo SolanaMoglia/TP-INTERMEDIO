@@ -1,0 +1,411 @@
+
+/*Para un css organizado voy a dividirlo en partes con comentarios, así también me ayuda a la hora de hacer futuros cambios*/
+
+/*RESET y BASES*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Edu VIC WA NT Hand";
+    word-spacing: 5px;
+    background-color: #fffaf8;
+    color: #4d3b36;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+
+/*HEADER y NAV*/
+header{
+    background-color: #fde8ef;
+    padding: 0.2rem 0.4rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;   
+}
+
+nav{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 0;
+    flex-wrap: wrap;
+}
+
+nav img{
+    width: 6rem;
+}
+
+nav ul{
+    display: flex;
+    gap: 1.8rem;
+    color: rgb(99, 36, 67);
+}
+
+nav a:hover{
+    color: #d86a93;
+}
+
+#menu-toggle{
+    display: none;
+}
+
+.menu-icon{
+    display: none;
+    cursor: pointer;
+    color: #b5479d;
+}
+
+/*HERO*/
+.hero{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    gap: 1.2rem;
+
+}
+
+.hero-index{
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/img/hero1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: #fde8ef;
+}
+
+.hero-contenido{
+
+    width: 80%;
+
+    background: rgba(255, 255, 255, 0.596);
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    text-align: center;
+}
+
+.hero h1{
+
+    font-size: 3rem;
+    color: #b5479d;
+    margin-bottom: 0.9rem;
+}
+
+.hero h2,h3{
+    font-size: 1.5rem;
+    color: #5a4038;
+    text-align: center;
+}
+
+.hero-contenido p{
+    font-size: 1.5rem;
+    color: #5e1c4f;
+    margin-bottom: 0.6rem;
+    
+}
+
+
+
+/*BOTONES*/
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: fit-content;
+    margin: 2rem auto;
+    padding: 0.9rem 1.8rem;
+    background-color: #ee6899;
+    color: white;
+    border: none;
+    border-radius: 0.6rem;
+    transition: 0.3s;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+
+    background-color: #e88cb0;
+}
+
+.btn-comprar{
+    align-self: center;
+    background-color: #d86a93;
+    color: white;
+    border: none;
+    border-radius: 1.25rem;
+    padding: 0.6rem 1.25rem;
+    text-decoration: none;
+    margin: 0.6rem 1.25rem 1.25rem;
+    transition: 0.3s;
+    font-weight: 200;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn-comprar:hover{
+    background-color: white;
+    color: #b5479d;
+
+}
+
+
+/*SECTIONS*/
+section{
+    width: 90%;
+    margin: 5rem auto;
+}
+
+section h2{
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+/*SECTION CONTACTO*/
+.contacto p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*PRODUCTOS*/
+.productos p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/*CARDS*/
+.contenedor-cards{
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+.card{
+
+    width: 280px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 0 10px rgba(0,0,0,.15);
+
+    background-color: white;
+}
+
+.card img{
+
+    height: 220px;
+
+    object-fit: cover;
+}
+
+.card h3{
+
+    margin: 20px;
+    text-align: center;
+}
+
+.card p{
+
+    margin: 0 20px 20px;
+    text-align: center;
+    flex-grow: 1; 
+}
+
+
+/*FORMULARIOS*/
+form{
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    width: 600px;
+
+    margin: auto;
+}
+form p{
+    text-align: center;
+    width: 80%;
+}
+
+input,
+select,
+textarea{
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+}
+
+input[type="submit"],
+input[type="reset"]{
+
+    cursor: pointer;
+
+    background-color: #f5adc7;
+
+    color: white;
+
+    border: none;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover{
+
+    background-color: #e88cb0;
+}
+
+/*PERSONALIZADOS*/
+.galeria-personalizados{
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    margin: 40px auto;
+}
+
+.galeria-personalizados img{
+
+    width: auto;
+    height: 350px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+
+/*FORMULARIO EN PERSONALIZADOS*/
+.formulario-pedido-personalizado {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario-pedido-personalizado p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*FOOTER*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.8rem;
+    background-color: #fde8ef;
+    color: rgb(99, 36, 67);
+    margin-top: auto;
+}
+
+.footer-social{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.8rem;
+}
+
+.footer-social a:hover{
+    color: #d86a93;
+}
+
+
+/*RESPONSIVE*/
+@media (max-width:768px){
+    nav{
+        width: 90%;
+        flex-direction:row;  
+        text-align: center;
+    }
+
+    .hero h1{
+        font-size: 2rem;
+    }
+
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+        color: #b5479d;
+        z-index: 20;
+    }
+
+    .menu-icon svg{
+        width: 35px;
+        height: 35px;
+    }
+
+    nav ul{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: #fde8ef;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        transition: 0.3s;
+        z-index: 10;
+        padding: 0;
+        margin: 0;
+    }
+
+    #menu-toggle:checked ~ ul{
+        right: 0;
+    }
+
+    nav img{
+        width: 80px;
+    }
+
+}
+

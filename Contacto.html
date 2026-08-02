@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería SM Contacto</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand:wght@400..700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/94d40e5b53.js" crossorigin="anonymous"></script>
+  
+<link rel="icon" type="image/x-icon" href="./assets/img/icono.png">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="./index.html">
+            <img src="./assets/img/logo.png" alt="Logo de Pastelería SM">
+            </a>
+
+ <!-- Para el menu oculto y desplegable en responsive, incluye icono -->
+        <input type="checkbox" id="menu-toggle">
+
+        <label for="menu-toggle" class="menu-icon">
+
+            <svg xmlns="http://www.w3.org/2000/svg" 
+                width="32" 
+                height="32" 
+                fill="currentColor" 
+                class="bi bi-list" 
+                viewBox="0 0 16 16">
+
+                <path fill-rule="evenodd" 
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+
+            </svg>
+            </label>
+            <ul>
+                <li><a href="./index.html" target="_blank" rel="noopener noreferrer">Inicio</a></li>
+                <li><a href="./Productos.html" target="_blank" rel="noopener noreferrer">Productos</a></li>
+                <li><a href="./Pedidos.html" target="_blank" rel="noopener noreferrer">Pedidos</a></li>
+                <li><a href="./Pedidospersonalizados.html" target="_blank" rel="noopener noreferrer">Personalizados</a></li>
+                <li><a href="./Contacto.html" target="_blank" rel="noopener noreferrer">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+
+    <section class="hero">
+        <h1>Contacto</h1>
+    </section>
+
+
+    <section class="contacto">
+
+        <p>
+            ¿Tenés dudas sobre alguno de nuestros productos? ¿Querés saber si
+            realizamos otros productos? ¿Tenés un evento y necesitás
+            asesoramiento? También podés consultarnos por mesas dulces o servicio
+            de catering.
+
+            Completá nuestro formulario de contacto y a la brevedad nos pondremos
+            en contacto con vos.
+        </p>
+
+
+        <form method="post">
+
+            <label for="nombre">Nombre y Apellido</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" required>
+
+
+            <label for="telefono">Teléfono</label>
+            <input type="number" id="telefono" name="telefono" required>
+
+
+            <label for="motivo">Motivo de contacto</label>
+            <select id="motivo" name="motivo" required>
+
+                <option value="">Seleccione una opción</option>
+                <option>Consulta sobre productos</option>
+                <option>Eventos</option>
+                <option>Reclamos</option>
+                <option>Otros</option>
+
+            </select>
+
+
+            <label>¿Cómo nos conociste?</label>
+
+            <input type="radio" id="tiktok" name="conocio" value="tiktok">
+            <label for="tiktok">Tik Tok</label>
+
+            <input type="radio" id="instagram" name="conocio" value="instagram">
+            <label for="instagram">Instagram</label>
+
+            <input type="radio" id="recomendacion" name="conocio" value="recomendacion">
+            <label for="recomendacion">Recomendación de un cliente</label>
+
+            <input type="radio" id="otro" name="conocio" value="otro">
+            <label for="otro">Otro</label>
+
+            <label for="comentarios"> Comentarios
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+                    <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                    <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6m0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
+                </svg>
+
+            </label>
+            <textarea 
+                id="comentarios" 
+                name="comentarios" 
+                rows="5"
+                placeholder="Contanos tu consulta...">
+            </textarea> 
+
+
+            <input type="submit" value="Enviar">
+
+            <input type="reset" value="Limpiar">
+
+        </form>
+
+    </section>
+
+</main>
+     <footer>
+        <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+        
+        <p>&copy; 2026 Pastelería SM. Derechos reservados.</p>
+        
+    </footer>
+</body>
+</html>

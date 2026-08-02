@@ -3,12 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pastelería Artesanal</title>
+    <title>Pastelería SM Inicio</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand:wght@400..700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/94d40e5b53.js" crossorigin="anonymous"></script>
+  
+    <link rel="icon" type="image/x-icon" href="./assets/img/icono.png">
+
 </head>
+
 <body>
+    <header>
+        <nav>
+            <a href="./index.html">
+            <img src="./assets/img/logo.png" alt="Logo de Pastelería SM">
+            </a>
+
+ <!-- Para el menu oculto y desplegable en responsive, incluye icono -->
+        <input type="checkbox" id="menu-toggle">
+
+        <label for="menu-toggle" class="menu-icon">
+
+            <svg xmlns="http://www.w3.org/2000/svg" 
+                width="32" 
+                height="32" 
+                fill="currentColor" 
+                class="bi bi-list" 
+                viewBox="0 0 16 16">
+
+                <path fill-rule="evenodd" 
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+
+            </svg>
+
+            </label>
+
+
+            <ul>
+                <li><a href="./index.html" target="_blank" rel="noopener noreferrer">Inicio</a></li>
+                <li><a href="./Productos.html" target="_blank" rel="noopener noreferrer">Productos</a></li>
+                <li><a href="./Pedidos.html" target="_blank" rel="noopener noreferrer">Pedidos</a></li>
+                <li><a href="./Pedidospersonalizados.html" target="_blank" rel="noopener noreferrer">Personalizados</a></li>
+                <li><a href="./Contacto.html" target="_blank" rel="noopener noreferrer">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+    <section class="hero hero-index">
+
+        <div class="hero-contenido">
+            <h1>Pastelería SM</h1>
+                <p>
+                     Pastelería Artesanal hecha con amor para acompañarte en cada momento especial.
+                 </p>
+        </div>
+
+</section>
+
+    <section>
+        <h2>Productos Destacados</h2>
+
+        <div class="contenedor-cards">
+
+            <div class="card">
+
+    <img src="assets/img/brownie.jpg" alt="Brownie de chocolate con frutos rojos">
+
+    <h3>Brownie con Frutos Rojos</h3>
+
     <p>
-        Pastelería Artesanal hecha con amor para acompañarte en cada momento especial 
+       Un clásico, pero el más pedido. Base de brownie, con crema, dulce de leche y frutos rojos. Productos frescos y de calidad.
     </p>
+    <a href="Pedidos.html" class="btn-comprar">Ver más</a>
+
+            </div>
+
+              <div class="card">
+
+    <img src="assets/img/cheesecakemaracuya.jpg" alt="Cheesecake de Maracuyá">
+
+    <h3>Cheesecake de Maracuyá </h3>
+
+    <p>
+        Frescura y sabor en un mismo bocado. Otro de los favoritos y más elegidos. Relleno cremoso y frutal.  
+    </p>
+     <a href="Pedidos.html" class="btn-comprar">Ver más</a>
+             </div>
+
+             <div class="card">
+
+    <img src="assets/img/chocotorta1.jpg" alt="Chocotorta">
+
+    <h3>Chocotorta</h3>
+
+    <p>
+        Infaltable en cualquier mesa dulce. Una combinación de galletitas de chocolate, dulce de leche y queso crema que conquista a grandes y chicos.
+    </p>
+    <a href="Pedidos.html" class="btn-comprar">Ver más</a>
+            </div>
+
+           
+        </div>
+
+        <a href="productos.html" class="btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cake-fill" viewBox="0 0 16 16">
+        <path d="m7.399.804.595-.792.598.79A.747.747 0 0 1 8.5 1.806V4H11a2 2 0 0 1 2 2v3h1a2 2 0 0 1 2 2v4a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1v-4a2 2 0 0 1 2-2h1V6a2 2 0 0 1 2-2h2.5V1.813a.747.747 0 0 1-.101-1.01Z"/>
+        </svg> Ver todos los productos
+
+</a>
+    </section>
+
+    <section class="sobre-nosotros">
+        <h2>Sobre Nosotros</h2>
+          <p> En Pastelería SM creemos que cada celebración merece un sabor especial. Por eso,
+    elaboramos tortas, postres y productos artesanales con ingredientes de primera
+    calidad, cuidando cada detalle con dedicación y amor. Nuestro compromiso es
+    brindar productos frescos, deliciosos y una atención personalizada para que
+    cada creación acompañe y haga aún más especiales tus momentos más importantes.</p>
+    </section>
+
+     </main>
     
+
+     <footer>
+        <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+        
+        <p>&copy; 2026 Pastelería SM. Derechos reservados.</p>
+        
+    </footer>
 </body>
 </html>
