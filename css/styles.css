@@ -145,14 +145,14 @@ nav a:hover{
     width: fit-content;
     margin: 2rem auto;
     padding: 0.9rem 1.8rem;
-    background-color: #ee6899;
+    background-color: #d86a93;
     color: white;
     border: none;
     border-radius: 0.6rem;
     transition: 0.3s;
     font-size: 1rem;
     cursor: pointer;
-}
+} 
 
 .btn:hover{
 
@@ -257,42 +257,35 @@ section h2{
 
 /*FORMULARIOS*/
 form{
-
     display: flex;
-
     flex-direction: column;
-
-    gap: 15px;
-
-    width: 600px;
-
+    gap: 0.9rem;
+    width: 80%;
     margin: auto;
+    max-width: 600px;
+    margin: 2.5rem auto;
 }
 form p{
-    text-align: center;
     width: 80%;
+    margin: auto;
+    text-align: center;
 }
 
 input,
 select,
 textarea{
-
-    padding: 12px;
-
-    border: 1px solid #ccc;
-
+    width: 100%;
+    padding: 0.75rem;
+    border: 0.06rem solid #ccc;
     border-radius: 8px;
+    box-sizing: border-box;
 }
 
 input[type="submit"],
 input[type="reset"]{
-
-    cursor: pointer;
-
+     cursor: pointer;
     background-color: #f5adc7;
-
     color: white;
-
     border: none;
 }
 
@@ -300,6 +293,24 @@ input[type="submit"]:hover,
 input[type="reset"]:hover{
 
     background-color: #e88cb0;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+    width: auto;
+    margin: 0;
+}
+
+.opciones-radio{
+    display: flex;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+}
+
+.opciones-radio label{
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 /*PERSONALIZADOS*/
@@ -407,5 +418,28 @@ footer{
         width: 80px;
     }
 
+    form{
+        width: 95%;
+        padding: 20px;
+    }
+
+    form p{
+        width: 100%;
+    }
+
+    .opciones-radio{
+        flex-direction: column;
+        gap: 20px;
+        flex-wrap: wrap;
+    } 
+
+    .opciones-radio label{
+
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
 }
+
+
 
