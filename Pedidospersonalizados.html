@@ -57,7 +57,6 @@
 
     <section class="hero">
         <h1>Pedidos Personalizados</h1>
-    
     </section>
     <section>
          <h2>Realizamos tortas y postres únicos para cumpleaños, casamientos, bautismos,
@@ -103,11 +102,11 @@
 
         <label for="tamaño">Tamaño del pastel</label>
         <select id="tamaño" name="tamaño" required>
-            <option value="">Seleccione una opción</option>
-            <option>Pequeño (10 personas)</option>
-            <option>Mediano (20 personas)</option>
-            <option>Grande (40 personas)</option>
-            <option>Otro</option>
+            <option value="" disabled selected>Seleccione una opción</option>
+            <option value="Pequeño">Pequeño (10 personas)</option>
+            <option value="Mediano">Mediano (20 personas)</option>
+            <option value="Grande">Grande (40 personas)</option>
+            <option value="Otro">Otro</option>
         </select>
 
         <label for="pisos">Cantidad de pisos</label>
@@ -115,13 +114,13 @@
 
         <label for="relleno">Relleno</label>
         <select id="relleno" name="relleno">
-            <option value="">Seleccione un relleno</option>
-            <option>Dulce de leche</option>
-            <option>Chocolate</option>
-            <option>Nutella</option>
-            <option>Frutas (depende la estación)</option>
-            <option>Oreo</option>
-            <option>Otro</option>
+            <option value="" disabled selected>Seleccione un relleno</option>
+            <option value="DDL">Dulce de leche</option>
+            <option value="Chocolate">Chocolate</option>
+            <option value="Nutella">Nutella</option>
+            <option value="Frutal">Frutas (depende la estación)</option>
+            <option value="Oreo">Oreo</option>
+            <option value="Otro">Otro</option>
         </select>
 
         <label for="nombre-torta">¿Desea incluir un nombre?</label>
@@ -138,11 +137,7 @@
             Información útil para la elaboración
         </label>
 
-        <textarea
-            id="descripcion"
-            name="descripcion"
-            rows="10"
-            placeholder="Describa el diseño deseado, colores, temática (Rapunzel, Spider-Man, Flores, etc.), detalles especiales y cualquier información importante. Intente ser lo más especifico posible"></textarea>
+        <textarea id="descripcion" name="descripcion" rows="10" placeholder="Describa el diseño deseado, colores, temática (Rapunzel, Spider-Man, Flores, etc.), detalles especiales y cualquier información importante. Intente ser lo más especifico posible"></textarea>
 
         <label for="imagen" >Imágen de referencia</label>
         <input type="file" id="imagen" name="imagen" accept="image/*">

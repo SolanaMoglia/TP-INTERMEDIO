@@ -88,11 +88,11 @@
             <label for="motivo">Motivo de contacto</label>
             <select id="motivo" name="motivo" required>
 
-                <option value="">Seleccione una opción</option>
-                <option>Consulta sobre productos</option>
-                <option>Eventos</option>
-                <option>Reclamos</option>
-                <option>Otros</option>
+                <option value="" disabled selected>Seleccione una opción</option>
+                <option value="Productos">Consulta sobre productos</option>
+                <option value="Eventos">Eventos</option>
+                <option value="Reclamos">Reclamos</option>
+                <option value="Otros">Otros</option>
 
             </select>
 
@@ -122,17 +122,13 @@
                 </svg>
 
             </label>
-            <textarea 
-                id="comentarios" 
-                name="comentarios" 
-                rows="5"
-                placeholder="Contanos tu consulta...">
+            <textarea id="comentarios"  name="comentarios" rows="5" placeholder="Contanos tu consulta...">
             </textarea> 
 
-
-            <input type="submit" value="Enviar">
-
-            <input type="reset" value="Limpiar">
+            <div class="botones-form">
+                <button type="submit" class="btn">Enviar</button>
+                <button type="reset" class="btn">Limpiar</button>
+            </div>
 
         </form>
 

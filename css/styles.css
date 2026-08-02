@@ -10,7 +10,7 @@
 
 body{
     font-family: "Edu VIC WA NT Hand";
-    word-spacing: 5px;
+    word-spacing: 0.3rem;
     background-color: #fffaf8;
     color: #4d3b36;
     line-height: 1.6;
@@ -102,20 +102,14 @@ nav a:hover{
 }
 
 .hero-contenido{
-
     width: 80%;
-
     background: rgba(255, 255, 255, 0.596);
-
-    border-radius: 20px;
-
-    padding: 30px;
-
+    border-radius: 1.25rem;
+    padding: 1.8rem;
     text-align: center;
 }
 
 .hero h1{
-
     font-size: 3rem;
     color: #b5479d;
     margin-bottom: 0.9rem;
@@ -135,7 +129,6 @@ nav a:hover{
 }
 
 
-
 /*BOTONES*/
 .btn{
     display: flex;
@@ -148,11 +141,19 @@ nav a:hover{
     background-color: #d86a93;
     color: white;
     border: none;
-    border-radius: 0.6rem;
-    transition: 0.3s;
+    border-radius: 1.25rem;
     font-size: 1rem;
+    font-weight: 200;
+    text-decoration: none;
+    transition: 0.3s;
     cursor: pointer;
 } 
+.botones-form{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
 
 .btn:hover{
 
@@ -195,63 +196,53 @@ section h2{
 /*SECTION CONTACTO*/
 .contacto p {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 /*PRODUCTOS*/
 .productos p{
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 
 /*CARDS*/
 .contenedor-cards{
-
     display: flex;
-
     justify-content: center;
-
-    gap: 30px;
-
+    gap: 1.8rem;
     flex-wrap: wrap;
+    margin: auto;
+    max-width: 80rem;
 }
 
-.card{
-
-    width: 280px;
-
+.card{ 
+    max-width: 17.5rem;
     display: flex;
-
     flex-direction: column;
-
-    border-radius: 15px;
-
+    border-radius: 0.9rem;
     overflow: hidden;
-
-    box-shadow: 0 0 10px rgba(0,0,0,.15);
-
+    box-shadow: 0 0 0.6rem rgba(0,0,0,0.15);
     background-color: white;
+
 }
 
 .card img{
-
-    height: 220px;
-
+    height: 13.75rem;
+    width: 100%;
     object-fit: cover;
 }
 
 .card h3{
-
-    margin: 20px;
+    padding: 1.25rem;
     text-align: center;
 }
 
 .card p{
-
-    margin: 0 20px 20px;
+    padding: 0 1.25rem 1.25rem;
     text-align: center;
     flex-grow: 1; 
+    font-size: o.95rem;
 }
 
 
@@ -262,8 +253,12 @@ form{
     gap: 0.9rem;
     width: 80%;
     margin: auto;
-    max-width: 600px;
+    max-width: 40rem;
     margin: 2.5rem auto;
+    background-color: #fde8ef;
+    border-radius: 0.75rem;
+    padding: 2rem;
+    box-shadow: 0 0.25rem 0.75rem #854459 ;
 }
 form p{
     width: 80%;
@@ -277,22 +272,8 @@ textarea{
     width: 100%;
     padding: 0.75rem;
     border: 0.06rem solid #ccc;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     box-sizing: border-box;
-}
-
-input[type="submit"],
-input[type="reset"]{
-     cursor: pointer;
-    background-color: #f5adc7;
-    color: white;
-    border: none;
-}
-
-input[type="submit"]:hover,
-input[type="reset"]:hover{
-
-    background-color: #e88cb0;
 }
 
 input[type="radio"],
@@ -310,41 +291,44 @@ input[type="checkbox"]{
 .opciones-radio label{
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 0.3rem;
 }
 
-/*PERSONALIZADOS*/
-.galeria-personalizados{
-
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-
-    margin: 40px auto;
-}
-
-.galeria-personalizados img{
-
-    width: auto;
-    height: 350px;
-
-    object-fit: cover;
-
-    border-radius: 10px;
-}
 
 /*FORMULARIO EN PERSONALIZADOS*/
 .formulario-pedido-personalizado {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 0.9rem;
 }
 
 .formulario-pedido-personalizado p {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
+
+/*PERSONALIZADOS*/
+.galeria-personalizados{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin: 2.5rem auto;
+    max-width: 80rem;
+  
+}
+
+.galeria-personalizados img{
+    width: auto;
+    height: 21.8rem;
+    object-fit: cover;
+    border-radius: 0.6rem;
+}
+
+.galeria-personalizados img:hover{
+    transform: scale(1.03)
+}
+
 
 /*FOOTER*/
 footer{
@@ -388,8 +372,8 @@ footer{
     }
 
     .menu-icon svg{
-        width: 35px;
-        height: 35px;
+        width: 2.1rem;
+        height: 2.1rem;
     }
 
     nav ul{
@@ -403,7 +387,7 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 30px;
+        gap: 1.8rem;
         transition: 0.3s;
         z-index: 10;
         padding: 0;
@@ -415,21 +399,22 @@ footer{
     }
 
     nav img{
-        width: 80px;
+        width: 5rem;
     }
 
     form{
         width: 95%;
-        padding: 20px;
+        padding: 1.25rem;
     }
 
     form p{
         width: 100%;
     }
 
+
     .opciones-radio{
         flex-direction: column;
-        gap: 20px;
+        gap: 1.25rem;
         flex-wrap: wrap;
     } 
 
@@ -437,7 +422,7 @@ footer{
 
         display: flex;
         align-items: center;
-        gap: 5px;
+        gap: 0.3rem;
     }
 }
 

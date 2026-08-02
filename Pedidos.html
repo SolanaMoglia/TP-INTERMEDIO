@@ -81,15 +81,15 @@
 
         <label for="torta">Seleccionar torta</label>
         <select id="torta" name="torta" required>
-            <option value="">Seleccione una opción</option>
-            <option>Cheesecake de Maracuyá</option>
-            <option>Brownie con Frutos Rojos</option>
-            <option>Chocotorta</option>
-            <option>Rogel</option>
-            <option>Red Velvet</option>
-            <option>Selva Negra</option>
-            <option>Lemon Pie</option>
-            <option>Matilda</option>
+            <option value="" disabled selected>Seleccione una opción</option>
+            <option value="Cheesecake">Cheesecake de Maracuyá</option>
+            <option value="Brownie">Brownie con Frutos Rojos</option>
+            <option value="Chocotorta">Chocotorta</option>
+            <option value="Rogel">Rogel</option>
+            <option value="Red Velvet">Red Velvet</option>
+            <option value="Selva Negra">Selva Negra</option>
+            <option value="Lemon Pie">Lemon Pie</option>
+            <option value="Matilda">Matilda</option>
         </select>
 
         <label>Tamaño</label>
@@ -105,9 +105,10 @@
         <label for="40">40 personas</label>
         </div>
         
-        <input type="submit" value="Enviar Pedido">
-
-        <input type="reset" value="Limpiar Formulario">
+        <div class="botones-form">
+            <button type="submit" class="btn">Enviar</button>
+            <button type="reset" class="btn">Limpiar</button>
+        </div>
 
     </form>
 
