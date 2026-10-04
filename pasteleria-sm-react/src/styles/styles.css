@@ -1,0 +1,384 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Edu VIC WA NT Hand", cursive;
+  word-spacing: 0.3rem;
+  background-color: #fffaf8;
+  color: #4d3b36;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  background-color: #fde8ef;
+  padding: 0.2rem 0.4rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0;
+  flex-wrap: wrap;
+}
+
+nav img {
+  width: 6rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.8rem;
+  color: rgb(99, 36, 67);
+}
+
+nav a:hover,
+nav a.active {
+  color: #d86a93;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  color: #b5479d;
+}
+
+.hero {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  gap: 1.2rem;
+}
+
+.hero-index {
+  min-height: 80vh;
+  background-image: url("../assets/img/hero1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: #fde8ef;
+}
+
+.hero-contenido {
+  width: 80%;
+  background: rgba(255, 255, 255, 0.596);
+  border-radius: 1.25rem;
+  padding: 1.8rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #b5479d;
+  margin-bottom: 0.9rem;
+}
+
+.hero h2,
+h3 {
+  font-size: 1.5rem;
+  color: #5a4038;
+  text-align: center;
+}
+
+.hero-contenido p {
+  font-size: 1.5rem;
+  color: #5e1c4f;
+  margin-bottom: 0.6rem;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: fit-content;
+  margin: 2rem auto;
+  padding: 0.9rem 1.8rem;
+  background-color: #d86a93;
+  color: white;
+  border: none;
+  border-radius: 1.25rem;
+  font-size: 1rem;
+  font-weight: 200;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.botones-form {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn:hover {
+  background-color: #e88cb0;
+}
+
+.btn-comprar {
+  align-self: center;
+  background-color: #d86a93;
+  color: white;
+  border: none;
+  border-radius: 1.25rem;
+  padding: 0.6rem 1.25rem;
+  margin: 0.6rem 1.25rem 1.25rem;
+  transition: 0.3s;
+  font-weight: 200;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-comprar:hover {
+  background-color: white;
+  color: #b5479d;
+}
+
+section {
+  width: 90%;
+  margin: 5rem auto;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.contacto p,
+.productos p,
+.formulario-pedido-personalizado p {
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.contenedor-cards {
+  display: flex;
+  justify-content: center;
+  gap: 1.8rem;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 80rem;
+}
+
+.card {
+  max-width: 17.5rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.9rem;
+  overflow: hidden;
+  box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.15);
+  background-color: white;
+}
+
+.card img {
+  height: 13.75rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.card p {
+  padding: 0 1.25rem 1.25rem;
+  text-align: center;
+  flex-grow: 1;
+  font-size: 0.95rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  width: 80%;
+  max-width: 40rem;
+  margin: 2.5rem auto;
+  background-color: #fde8ef;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  box-shadow: 0 0.25rem 0.75rem #854459;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 0.06rem solid #ccc;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+}
+
+.opciones-radio {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.opciones-radio label {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.formulario-pedido-personalizado {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.galeria-personalizados {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 2.5rem auto;
+  max-width: 80rem;
+}
+
+.galeria-personalizados img {
+  width: auto;
+  height: 21.8rem;
+  object-fit: cover;
+  border-radius: 0.6rem;
+  transition: 0.3s;
+}
+
+.galeria-personalizados img:hover {
+  transform: scale(1.03);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.8rem;
+  background-color: #fde8ef;
+  color: rgb(99, 36, 67);
+  margin-top: auto;
+}
+
+.footer-social {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.8rem;
+}
+
+.footer-social a:hover {
+  color: #d86a93;
+}
+
+@media (max-width: 768px) {
+  nav {
+    width: 90%;
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    color: #b5479d;
+    z-index: 20;
+  }
+
+  .menu-icon svg {
+    width: 2.1rem;
+    height: 2.1rem;
+  }
+
+  nav ul {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: #fde8ef;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.8rem;
+    transition: 0.3s;
+    z-index: 10;
+    padding: 0;
+    margin: 0;
+  }
+
+  #menu-toggle:checked ~ ul {
+    right: 0;
+  }
+
+  nav img {
+    width: 5rem;
+  }
+
+  form {
+    width: 95%;
+    padding: 1.25rem;
+  }
+
+  .opciones-radio {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
